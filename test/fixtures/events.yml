@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  title: MyString
+  view_count: MyString
+  intger: MyString
+
+two:
+  name: MyString
+  title: MyString
+  view_count: MyString
+  intger: MyString

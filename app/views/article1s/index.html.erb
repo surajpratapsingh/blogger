@@ -1,0 +1,15 @@
+<h1>All Articles<h1>
+<table id ="article1s">
+	<th>Title</th>
+	<th colspan="2">Action</th><br>
+<% @article1s.each do |article1| %>
+	<tr>
+		<td><%= link_to article1.title, article1_path(article1),class: 'article1_title'%></td>		
+		<td class="edit"><%= link_to (edit_article1_path(article1)) do %> 
+			<%= image_tag('edit.jpg', class: "new-image") %>
+		<% end %></td>
+		<td class="delete"><%= link_to "delete", article1_path(article1), method: :delete %></td>
+	</tr><br>
+<% end %>
+</table><br>
+<%= link_to "New Record", new_article1_path, class: 'article1_title',id: "article1_title" %>
